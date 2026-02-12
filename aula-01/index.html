@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Aula 01 - Desenvolvimento de Interface Gráfica</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reset.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/theme/white.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/highlight/github.min.css"
+    />
+
+    <style>
+      .card-box {
+        background-color: #f0f2f5;
+        border-left: 5px solid #2a76dd;
+        color: #333;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      .reveal blockquote {
+        background: #f9f9f9;
+        border-left: 10px solid #ccc;
+        color: #555;
+        box-shadow: none;
+        width: 90%;
+      }
+      .highlight-blue {
+        color: #2a76dd;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+              ### Faculdade Donaduzzi
+              # Desenvolvimento de Interface Gráfica
+              **Etapa 1: Apresentação e Contexto**
+              
+              ---
+              **Prof. Guilherme de Araujo Gabriel**
+              1º Semestre - ADS
+              
+              Note:
+              Boas vindas. Alinhamento inicial.
+            </textarea>
+          </section>
+
+          <section data-markdown>
+            <textarea data-template>
+              ## Quem sou eu? 👨‍💻
+              
+              * **Engenharia Elétrica** (UTFPR)
+              * **Esp. Eng. Software / Modernização** (Faculdade Donaduzzi)
+              * **MBA Eng. Software** (UTFPR)
+              * **ADS** (Unopar)
+              * **Mestrado Informática** (UFPR)
+              * **Tech Lead** (P&D - Maxicon Sistemas)
+              
+              > "Trazer a realidade do mercado para a sala de aula."
+            </textarea>
+          </section>
+
+          <section data-markdown>
+            <textarea data-template>
+              ## A Disciplina
+              
+              * **Carga Horária:** 40 horas
+              * **Metodologia:** Ativa (PBL e PjBL)
+              * **Foco:** Protagonismo do estudante
+              
+              ---
+              ### Por que estudar isso em ADS?
+              Um sistema tecnicamente perfeito é inútil se o usuário não consegue interagir com ele.
+            </textarea>
+          </section>
+        </section>
+
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+              ## Cronograma: A Jornada 📅
+              
+              Nossas 40 horas serão divididas em 3 grandes blocos:
+              
+              1.  **Fundamentos (Encontros 1-7):** IHC, UX, Usabilidade e Acessibilidade.
+              2.  **Mão na Massa (Encontros 8-16):** Figma e desenvolvimento do projeto.
+              3.  **Refinamento e Entrega (Encontros 17-20):** Testes, ajustes e Banca Final.
+              
+              ---
+              *Seta para baixo para ver os marcos principais* ↓
+            </textarea>
+          </section>
+
+          <section data-markdown>
+            <textarea data-template>
+              ### Marcos do Semestre 🚩
+              
+              * **Encontro 9:** Prova Objetiva (Conhecimentos).
+              * **Encontro 10-15:** Desenvolvimento intenso do Projeto de Interface.
+              * **Encontro 17:** Prova Dissertativa.
+              * **Encontro 19:** **Banca Final** (Apresentação do protótipo).
+              
+              Note:
+              Baseado no cronograma de 20 encontros planejado.
+            </textarea>
+          </section>
+        </section>
+
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+              ## Sistema de Avaliação (CHA) ⚖️
+              
+              O cálculo da sua nota reflete o mercado:
+              
+              $$ MF = (C \times 0.70) + (H\&A \times 0.30) $$
+              
+              ---
+              * **C (Conhecimento):** Provas e entregas técnicas.
+              * **H&A (Habilidade e Atitude):** Como você trabalha em equipe e se comunica.
+            </textarea>
+          </section>
+
+          <section data-markdown>
+            <textarea data-template>
+              ### Detalhamento dos Pesos
+              
+              | Item | Peso na MF |
+              | :--- | :--- |
+              | Prova Dissertativa | 30% |
+              | Prova Objetiva | 15% |
+              | Projeto Final | 15% |
+              | TDE / Entregas Parciais | 10% |
+              | Habilidades e Atitudes | 30% |
+
+              Note:
+              Dados extraídos do Plano de Ensino [cite: 74-79].
+            </textarea>
+          </section>
+
+          <section data-markdown>
+            <textarea data-template>
+              ### Nova Oportunidade 🔄
+              
+              Não atingiu a média 7.0?
+              
+              * Você terá chance de revisar o desempenho.
+              * A nota final será a média aritmética entre a MF e a nota da recuperação.
+              
+              $$ NO = \frac{(MF + NotaNO)}{2} $$
+
+              Note:
+              Regra conforme item 93 e 96 do plano[cite: 93, 96].
+            </textarea>
+          </section>
+        </section>
+
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+              ## Etapa 3: Conceitos Iniciais 🧠
+              
+              ### O que é UX? (User Experience)
+              É a percepção e as respostas de uma pessoa que resultam do uso de um produto ou sistema.
+              
+              ---
+              * **Interface:** O ponto de contato (a tela).
+              * **Interação:** O "diálogo" entre o usuário e o sistema.
+            </textarea>
+          </section>
+
+          <section data-markdown>
+            <textarea data-template>
+              ### IHC
+              **Interação Humano-Computador**
+              
+              Área que estuda, projeta e avalia sistemas computacionais para o uso humano.
+              
+              > "Não é apenas 'deixar bonito'. É sobre eficiência, satisfação e acessibilidade."
+            </textarea>
+          </section>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## Etapa 4: O Profissional de UX 💼
+            
+            Onde você atua?
+            * **Pesquisa:** Entender o usuário.
+            * **Design:** Criar fluxos e protótipos.
+            * **Dev:** Garantir a fidelidade da implementação.
+            
+            ---
+            *Trabalho Interdisciplinar:* O desenvolvedor ADS que entende UX é um profissional muito mais valorizado no mercado.
+          </textarea>
+        </section>
+
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+              ## Etapa 5: Mão na Massa! 🛠️
+              **Atividade Diagnóstica (25 min)**
+              
+              Em duplas ou trios, escolham um App ou Site e analisem:
+              
+              1. É fácil de usar?
+              2. O que ajuda ou atrapalha a interação?
+              3. O que poderia melhorar?
+              4. Você indicaria para alguém?
+            </textarea>
+          </section>
+
+          <section data-markdown>
+            <textarea data-template>
+              ## Check-in 🧊
+              Relembrando nossa provocação inicial...
+              
+              > "Qual aplicativo ou site você usa todo dia, mas **odeia** a interface?"
+              
+              Use esse sentimento para a análise agora!
+            </textarea>
+          </section>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## Etapa 6: Fechamento 🏁
+            
+            * **Socialização:** O que descobrimos hoje?
+            * **Síntese:** UX, Interface, Interação e IHC.
+            
+            ---
+            ### Próxima Aula
+            Iniciaremos o aprofundamento teórico e a definição dos temas dos projetos práticos.
+            
+            ☕ *Dúvidas?*
+          </textarea>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/notes/notes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/highlight/highlight.min.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        slideNumber: true,
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
