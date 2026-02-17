@@ -5,20 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minhas Aulas - Slides</title>
     <link rel="stylesheet" href="assets/css/custom-slides.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
+
   </head>
-  <body class="body-menu">
+  <body class="body-menu" x-data="{ currentTab: 'ads' }">
     <h1 class="header-menu">📚 Central de Aulas</h1>
 
-    <ul class="aula-list">
-      <li class="aula-item">
-        <a href="aula-01/">Aula 01: Introdução e Conceitos Fundamentais</a>
-        <span class="aula-date">12/02/2026</span>
-      </li>
+    <div class="dashboard-grid">
+        
+        <!-- Coluna Esquerda: Abas e Mural de Avisos -->
+        <aside class="left-column">
+            <div class="tabs-container">
+                <button 
+                    class="tab-button" 
+                    :class="{ 'active': currentTab === 'ads' }" 
+                    @click="currentTab = 'ads'">
+                    ADS
+                </button>
+                <button 
+                    class="tab-button" 
+                    :class="{ 'active': currentTab === 'es' }" 
+                    @click="currentTab = 'es'">
+                    Eng. Software
+                </button>
+            </div>
 
-      <!-- <li class="aula-item">
-        <a href="aula-02/">Aula 02: Conceitos Avançados</a>
-        <span class="aula-date">18/02/2026</span>
-      </li> -->
-    </ul>
+            <div class="tab-content-wrapper">
+                <!-- Mural de Avisos: ADS -->
+                <div class="tab-pane" 
+                     x-show="currentTab === 'ads'"
+                     > 
+                    
+                    <div class="notice-board">
+                        <h3>📢 Mural de Avisos (ADS)</h3>
+                        <!-- <div class="notice-card urgent">
+                            <span class="notice-date">17/02/2026</span>
+                            <p><strong>Entrega de Trabalho:</strong> O prazo final para o projeto do Módulo 1 é dia 25/02.</p>
+                        </div>
+                        <div class="notice-card">
+                            <span class="notice-date">15/02/2026</span>
+                            <p>Não haverá aula no dia 20/02 devido ao feriado.</p>
+                        </div> -->
+
+                        <!-- Datas Importantes -->
+                        <div class="important-dates">
+                            <h4>📅 Datas Importantes</h4>
+                            <ul>
+                                <li>
+                                    <strong>09/04:</strong> Prova Dissertativa
+                                </li>
+                                <li>
+                                    <strong>16/04-21/05:</strong> Desenv. do Projeto de Interface
+                                </li>
+                                <li>
+                                    <strong>11/06:</strong> Prova Objetiva (Conhecimentos)
+                                </li>
+                                <li>
+                                    <strong class="date-urgent">25/06:</strong> Banca Final (Protótipo)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Mural de Avisos: Engenharia de Software -->
+                <div class="tab-pane" 
+                     x-show="currentTab === 'es'" 
+                     style="display: none;">
+                    
+                    <div class="notice-board">
+                        <h3>📢 Mural de Avisos (ES)</h3>
+                         <div class="notice-card">
+                            <span class="notice-date">24/02/2026</span>
+                            <p>Dias de aulas</p>
+                            <ul class="date-list-columns">
+                              <li>24/02/2026</li>
+                              <li>03/03/2026</li>
+                              <li>24/03/2026</li>
+                              <li>07/04/2026</li>
+                              <li>28/04/2026</li>
+                              <li>12/05/2026</li>
+                              <li>26/05/2026</li>
+                              <li>09/06/2026</li>
+                              <li>16/06/2026</li>
+                            </ul>
+                        </div>
+    
+                        <div class="important-dates">
+                            <h4>📅 Datas Importantes</h4>
+                            <ul>
+                                <li>
+                                    <strong>09/04:</strong> Prova Objetiva (Conhecimentos)
+                                </li>
+                                <li>
+                                    <strong>16/04-21/05:</strong> Desenv. do Projeto de Interface
+                                </li>
+                                <li>
+                                    <strong>11/06:</strong> Prova Dissertativa
+                                </li>
+                                <li>
+                                    <strong class="date-urgent">25/06:</strong> Banca Final (Protótipo)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <section class="class-list-container">
+            <h2 style="text-align: center;">Cronograma de Aulas</h2>
+            <ul class="aula-list">
+                <li class="aula-item">
+                    <a href="aula-01/">Aula 01: Introdução e Conceitos Fundamentais</a>
+                    <span class="aula-date">12/02/2026</span>
+                </li>
+                <!-- <li class="aula-item">
+                    <a href="aula-02/">Aula 02: Conceitos Avançados</a>
+                    <span class="aula-date">18/02/2026</span>
+                </li> -->
+            </ul>
+        </section>
+
+    </div>
+
   </body>
 </html>

@@ -94,3 +94,122 @@
     display: none;
   }
 }
+
+/* Tab Styles (Alpine.js) */
+.tab-button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+.tab-button:hover {
+  background-color: #e0e0e0;
+}
+.tab-button.active {
+  background-color: #007bff;
+  color: white;
+}
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* New styles for smooth transition */
+.tab-content-wrapper {
+  display: grid;
+  grid-template-areas: "content";
+}
+/* Dashboard Layout */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .dashboard-grid {
+        grid-template-columns: 350px 1fr; /* Left: Tabs/Notices, Right: Class List */
+        align-items: start;
+    }
+}
+
+/* Notice Board Styles */
+.notice-board {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+.notice-board h3 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.notice-card {
+    background-color: #f9f9f9;
+    border-left: 4px solid #f39c12; /* Cor de aviso/importante */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.notice-card.urgent {
+    border-left-color: #e74c3c; /* Cor de urgência */
+    background-color: #fff5f5;
+}
+
+.notice-date {
+    display: block;
+    font-size: 0.8em;
+    color: #7f8c8d;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Important Dates Styles */
+.important-dates {
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.important-dates h4 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.important-dates ul {
+  list-style: none;
+  padding: 0;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.important-dates li {
+  margin-bottom: 8px;
+}
+
+.important-dates .date-urgent {
+  color: #e74c3c;
+}
+
+.date-list-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    padding-left: 20px;
+    margin-top: 10px;
+}
