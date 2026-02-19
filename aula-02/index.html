@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
 
-    <title>Aula 01 - Desenvolvimento de Interface Gráfica</title>
+    <title>Aula 02 - Desenvolvimento de Interface Gráfica</title>
 
     <link
       rel="stylesheet"
@@ -37,43 +37,21 @@
             <textarea data-template>
               ### Faculdade Donaduzzi
               # Desenvolvimento de Interface Gráfica
-              **Etapa 1: Apresentação e Contexto**
+              **Encontro 2: Diferenciações Fundamentais e Affordance**
               
               ---
               **Prof. Guilherme de Araujo Gabriel**
               1º Semestre - ADS
-              
-              Note:
-              Boas vindas. Alinhamento inicial.
             </textarea>
           </section>
 
           <section data-markdown>
             <textarea data-template>
-              ## Quem sou eu? 👨‍💻
+              ## Tópico 1: UI vs. UX
               
-              * **Engenharia Elétrica** (UTFPR)
-              * **Esp. Eng. Software / Modernização** (Faculdade Donaduzzi)
-              * **MBA Eng. Software** (UTFPR)
-              * **ADS** (Unopar)
-              * **Mestrado Informática** (UFPR)
-              * **Tech Lead** (P&D - Maxicon Sistemas)
+              O objetivo deste tópico é corrigir a concepção equivocada de que "fazer o design" é apenas deixar a interface bonita. 
               
-              > "Trazer a realidade do mercado para a sala de aula."
-            </textarea>
-          </section>
-
-          <section data-markdown>
-            <textarea data-template>
-              ## A Disciplina
-              
-              * **Carga Horária:** 40 horas
-              * **Metodologia:** Ativa (PBL e PjBL)
-              * **Foco:** Protagonismo do estudante
-              
-              ---
-              ### Por que estudar isso em ADS?
-              Um sistema tecnicamente perfeito é inútil se o usuário não consegue interagir com ele.
+              É necessário estabelecer uma hierarquia clara entre os termos.
             </textarea>
           </section>
         </section>
@@ -81,79 +59,47 @@
         <section>
           <section data-markdown>
             <textarea data-template>
-              ## Cronograma: A Jornada 📅
+              ## A Hierarquia dos Conceitos
               
-              Nossas 40 horas serão divididas em 3 grandes blocos:
+              <div class="card-box" style="font-size: 0.8em; margin-bottom: 15px;">
+              **Usabilidade (Fatores Humanos):** É o conceito mais amplo. Refere-se ao estudo de como os seres humanos se relacionam com qualquer produto, seja uma torradeira, uma maçaneta ou um software.
+              </div>
               
-              1.  **Fundamentos (Encontros 1-7):** IHC, UX, Usabilidade e Acessibilidade.
-              2.  **Mão na Massa (Encontros 8-16):** Figma e desenvolvimento do projeto.
-              3.  **Refinamento e Entrega (Encontros 17-20):** Testes, ajustes e Banca Final.
+              <div class="card-box" style="font-size: 0.8em; margin-bottom: 15px;">
+              **IHC (Interação Humano-Computador):** É um subconjunto da usabilidade que foca especificamente na relação entre humanos e produtos computacionais/sistemas.
+              </div>
               
-              ---
-              *Seta para baixo para ver os marcos principais* ↓
+              <div class="card-box" style="font-size: 0.8em; margin-bottom: 15px;">
+              **DCU (Design Centrado no Usuário):** É a metodologia utilizada por designers e desenvolvedores para garantir que o produto final atenda às necessidades do usuário.
+              </div>
+              
+              <div class="card-box" style="font-size: 0.8em;">
+              **UX (Experiência de Usuário):** É o resultado final. É a soma de todas as partes anteriores.
+              </div>
             </textarea>
           </section>
 
           <section data-markdown>
             <textarea data-template>
-              ### Marcos do Semestre 🚩
+              ## UI vs. UX
               
-              * **Encontro 9 (09/04):** Prova Objetiva (Conhecimentos).
-              * **Encontro 10-15 (16/04-21/05):** Desenvolvimento intenso do Projeto de Interface.
-              * **Encontro 17 (11/06):** Prova Dissertativa.
-              * **Encontro 19 (25/06):** **Banca Final** (Apresentação do protótipo).
+              ### UI (User Interface)
+              Refere-se à **parte visível e tangível** do sistema (botões, menus, cores). Uma boa estética é importante, mas não garante sucesso.
               
-              Note:
-              Baseado no cronograma de 20 encontros planejado.
+              ### UX (User Experience)
+              Sintetiza "toda a experiência com um produto". Inclui funcionalidade, se é cativante, agradável e se atende emocionalmente ao usuário.
+              
+              > "A UX é maior do que a soma de suas partes."
             </textarea>
           </section>
-        </section>
-
-        <section>
+          
           <section data-markdown>
             <textarea data-template>
-              ## Sistema de Avaliação (CHA) ⚖️
+              ### O Exemplo da Bicicleta 🚲
               
-              O cálculo da sua nota reflete o mercado:
+              Lowdermilk ilustra com uma bicicleta que tem um design visual arrojado (**boa UI**), mas rodas quadradas (**má UX/Usabilidade**), tornando-a inútil.
               
-              $$ MF = (C \times 0.70) + (H \text{ & } A \times 0.30) $$
-              
-              ---
-              * **C (Conhecimento):** Provas e entregas técnicas.
-              * **H&A (Habilidade e Atitude):** Como você trabalha em equipe e se comunica.
-            </textarea>
-          </section>
-
-          <section data-markdown>
-            <textarea data-template>
-              ### Detalhamento dos Pesos
-              
-              | Item | Peso na MF |
-              | :--- | :--- |
-              | Prova Dissertativa | 30% |
-              | Prova Objetiva | 15% |
-              | Projeto Final | 15% |
-              | TDE / Entregas Parciais | 10% |
-              | Habilidades e Atitudes | 30% |
-
-              Note:
-              Dados extraídos do Plano de Ensino [cite: 74-79].
-            </textarea>
-          </section>
-
-          <section data-markdown>
-            <textarea data-template>
-              ### Nova Oportunidade 🔄
-              
-              Não atingiu a média 7.0?
-              
-              * Você terá chance de revisar o desempenho.
-              * A nota final será a média aritmética entre a MF e a nota da recuperação.
-              
-              $$ NO = \frac{(MF + NotaNO)}{2} $$
-
-              Note:
-              Regra conforme item 93 e 96 do plano[cite: 93, 96].
+              Um aplicativo pode ser esteticamente perfeito, mas se o fluxo de navegação for confuso, a UX será terrível.
             </textarea>
           </section>
         </section>
@@ -161,84 +107,163 @@
         <section>
           <section data-markdown>
             <textarea data-template>
-              ## Etapa 3: Conceitos Iniciais 🧠
+              ## Metas: Usabilidade vs. UX
               
-              ### O que é UX? (User Experience)
-              É a percepção e as respostas de uma pessoa que resultam do uso de um produto ou sistema.
-              
-              ---
-              * **Interface:** O ponto de contato (a tela).
-              * **Interação:** O "diálogo" entre o usuário e o sistema.
+              ### Metas de Usabilidade (Objetivas)
+              Focam na eficácia e eficiência:
+              * É eficaz?
+              * É seguro de usar?
+              * É fácil de aprender (learnability)?
+              * É eficiente (permite alta produtividade)?
             </textarea>
           </section>
 
           <section data-markdown>
             <textarea data-template>
-              ### IHC
-              **Interação Humano-Computador**
-              
-              Área que estuda, projeta e avalia sistemas computacionais para o uso humano.
-              
-              > "Não é apenas 'deixar bonito'. É sobre eficiência, satisfação e acessibilidade."
+              ### Metas de UX (Subjetivas)
+              Focam em como o usuário se **sente**:
+              * É satisfatório?
+              * É divertido?
+              * É motivador?
+              * É esteticamente agradável?
+              * É emocionalmente adequado?
             </textarea>
           </section>
         </section>
 
         <section data-markdown>
           <textarea data-template>
-            ## Etapa 4: O Profissional de UX 💼
+            ## O Mito da Subjetividade
             
-            Onde você atua?
-            * **Pesquisa:** Entender o usuário.
-            * **Design:** Criar fluxos e protótipos.
-            * **Dev:** Garantir a fidelidade da implementação.
+            **DCU não é apenas "arte".**
             
-            ---
-            *Trabalho Interdisciplinar:* O desenvolvedor ADS que entende UX é um profissional muito mais valorizado no mercado.
+            *   **Não é apenas design visual:** O foco real é na eficiência. A estética é apenas uma ferramenta.
+            *   **Baseado em dados:** O DCU combate "achismos". Utiliza ergonomia, psicologia e antropologia. Decisões devem ser baseadas em dados observáveis e testes, não na preferência pessoal.
+            
+            Note:
+            Decisões de design devem ser baseadas em dados.
           </textarea>
+        </section>
+        
+        <section data-markdown>
+            <textarea data-template>
+            ### Resumo do Tópico 1
+            
+            *   **UI** é o que o usuário **vê** (a "pele" do software).
+            *   **UX** é o que o usuário **sente e vivencia**.
+            
+            O papel do desenvolvedor é garantir que as telas permitam atingir tanto as metas de eficiência (**Usabilidade**) quanto as de satisfação (**UX**).
+            </textarea>
         </section>
 
         <section>
           <section data-markdown>
             <textarea data-template>
-              ## Etapa 5: Mão na Massa! 🛠️
-              **Atividade Diagnóstica (25 min)**
+              ## Tópico 2: Design de Interação e Affordance
               
-              Em duplas ou trios, escolham um App ou Site e analisem:
-              
-              1. É fácil de usar?
-              2. O que ajuda ou atrapalha a interação?
-              3. O que poderia melhorar?
-              4. Você indicaria para alguém?
+              **Objetivo da Aula:**
+              Compreender o Design de Interação como uma área multidisciplinar e dominar o conceito de **Affordance** para criar interfaces intuitivas.
             </textarea>
           </section>
 
           <section data-markdown>
             <textarea data-template>
-              ## Check-in 🧊
-              Relembrando nossa provocação inicial...
+              ### O que é Design de Interação?
               
-              > "Qual aplicativo ou site você usa todo dia, mas **odeia** a interface?"
+              Segundo Rogers:
+              > "O design de produtos interativos que fornecem suporte às atividades cotidianas das pessoas, seja no lar ou no trabalho."
               
-              Use esse sentimento para a análise agora!
+              ---
+              #### A Analogia da Arquitetura 🏗️
+              *   **Engenharia de Software** ≈ **Engenharia Civil** (integridade, custo, durabilidade).
+              *   **Design de Interação** ≈ **Arquitetura** (como as pessoas viverão e usarão o espaço).
+              
+              Note:
+              Terry Winograd analogia.
             </textarea>
+          </section>
+          
+          <section data-markdown>
+             <textarea data-template>
+              ### Multidisciplinaridade
+              
+              Exige colaboração de:
+              * Designers gráficos
+              * Psicólogos
+              * Engenheiros
+              * Antropólogos
+              * Cientistas da computação
+              
+              *Ponto de atenção:* Diferentes vocabulários técnicos podem causar falhas de comunicação.
+             </textarea>
+          </section>
+        </section>
+
+        <section>
+          <section data-markdown>
+            <textarea data-template>
+              ## O Conceito de Affordance
+              
+              Termo popularizado por **Don Norman**.
+              
+              Refere-se aos atributos de um objeto que permitem às pessoas saber como utilizá-lo. É dar uma **"pista" visual**.
+              
+              *   **Maçaneta:** Affordance de girar ou puxar.
+              *   **Botão do mouse:** Affordance de ser pressionado.
+            </textarea>
+          </section>
+
+          <section data-markdown>
+            <textarea data-template>
+              ### Affordance em Interfaces
+              **(Virtual vs. Real)**
+              
+              *   **Objetos físicos:** Têm affordances reais (uma cadeira suporta sentar).
+              *   **Interfaces de tela:** Têm **affordances percebidas**.
+              
+              Como a tela é plana, o designer deve criar a **ilusão** de que um objeto pode ser clicado ou arrastado.
+              
+              Note:
+              Exemplo de erro: botões flat sem relevo (pouca affordance percebida).
+            </textarea>
+          </section>
+          
+          <section data-markdown>
+             <textarea data-template>
+             ### Affordance Falsa
+             
+             O perigo de projetar objetos que parecem fazer algo que não fazem.
+             
+             *Exemplo:* Um texto sublinhado que parece um link, mas não é.
+             </textarea>
           </section>
         </section>
 
         <section data-markdown>
           <textarea data-template>
-            ## Etapa 6: Fechamento 🏁
+            ## Princípios Complementares
             
-            * **Socialização:** O que descobrimos hoje?
-            * **Síntese:** UX, Interface, Interação e IHC.
+            ### Restrições (Constraints)
+            Limitam as ações para prevenir erros.
+            *   **Físico:** Tomada de três pinos (impossível inserir incorretamente).
+            *   **Software:** "Menu sombreado" (mostra que existe, mas impede seleção incorreta).
             
-            ---
-            ### Próxima Aula
-            Iniciaremos o aprofundamento teórico e a definição dos temas dos projetos práticos.
-            
-            ☕ *Dúvidas?*
+            ### Visibilidade e Feedback
+            O sistema deve sempre informar o que está acontecendo (som de clique, animação de carregando).
           </textarea>
         </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## Atividade Prática (TDE) 🕵️‍♀️
+            
+            Encontrem, até a próxima aula:
+            
+            1.  Um exemplo de **má affordance em um objeto físico** do dia a dia (ex: porta com puxador que precisa empurrar).
+            2.  Um exemplo em uma **interface digital** (ex: um botão que não parece botão).
+          </textarea>
+        </section>
+
       </div>
     </div>
 
@@ -247,6 +272,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/markdown/markdown.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/highlight/highlight.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/math/math.min.js"></script>
+    <script src="../assets/js/custom-slides.js"></script>
     <script>
       Reveal.initialize({
         hash: true,
