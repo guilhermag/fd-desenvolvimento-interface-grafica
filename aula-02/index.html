@@ -1,40 +1,28 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-    />
 
-    <title>Aula 02 - Desenvolvimento de Interface Gráfica</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reset.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/theme/white.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/highlight/github.min.css"
-    />
+  <title>Aula 02 - Desenvolvimento de Interface Gráfica</title>
 
-    <link rel="stylesheet" href="../assets/css/custom-slides.css" />
-  </head>
-  <body>
-    <a href="../" class="back-link">← Voltar para Aulas</a>
-    <div class="reveal">
-      <div class="slides">
-        <section>
-          <section data-markdown>
-            <textarea data-template>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reset.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/theme/white.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/highlight/github.min.css" />
+
+  <link rel="stylesheet" href="../assets/css/custom-slides.css" />
+</head>
+
+<body>
+  <a href="../" class="back-link">← Voltar para Aulas</a>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <section data-markdown>
+          <textarea data-template>
               ### Faculdade Donaduzzi
               # Desenvolvimento de Interface Gráfica
               **Encontro 2: Diferenciações Fundamentais e Affordance**
@@ -43,46 +31,50 @@
               **Prof. Guilherme de Araujo Gabriel**
               1º Semestre - ADS
             </textarea>
-          </section>
+        </section>
 
-          <section data-markdown>
-            <textarea data-template>
+        <section data-markdown>
+          <textarea data-template>
               ## Tópico 1: UI vs. UX
               
               O objetivo deste tópico é corrigir a concepção equivocada de que "fazer o design" é apenas deixar a interface bonita. 
               
               É necessário estabelecer uma hierarquia clara entre os termos.
             </textarea>
-          </section>
         </section>
+      </section>
 
-        <section>
-          <section data-markdown>
-            <textarea data-template>
+      <section>
+        <section data-markdown>
+          <textarea data-template>
               ## A Hierarquia dos Conceitos
               
               <div class="card-box" style="font-size: 0.8em; margin-bottom: 15px;">
-              **Usabilidade (Fatores Humanos):** É o conceito mais amplo. Refere-se ao estudo de como os seres humanos se relacionam com qualquer produto, seja uma torradeira, uma maçaneta ou um software.
+              <strong>Usabilidade (Fatores Humanos)</strong> É o conceito mais amplo. Refere-se ao estudo de como os seres humanos se relacionam com qualquer produto, seja uma torradeira, uma maçaneta ou um software.
               </div>
               
               <div class="card-box" style="font-size: 0.8em; margin-bottom: 15px;">
-              **IHC (Interação Humano-Computador):** É um subconjunto da usabilidade que foca especificamente na relação entre humanos e produtos computacionais/sistemas.
-              </div>
-              
-              <div class="card-box" style="font-size: 0.8em; margin-bottom: 15px;">
-              **DCU (Design Centrado no Usuário):** É a metodologia utilizada por designers e desenvolvedores para garantir que o produto final atenda às necessidades do usuário.
-              </div>
-              
-              <div class="card-box" style="font-size: 0.8em;">
-              **UX (Experiência de Usuário):** É o resultado final. É a soma de todas as partes anteriores.
+              <strong>IHC (Interação Humano-Computador)</strong> É um subconjunto da usabilidade que foca especificamente na relação entre humanos e produtos computacionais/sistemas.
               </div>
             </textarea>
-          </section>
+        </section>
 
-          <section data-markdown>
-            <textarea data-template>
-              ## UI vs. UX
+        <section data-markdown>
+          <textarea data-template>
+              ## A Hierarquia dos Conceitos
               
+              <div class="card-box" style="font-size: 0.8em; margin-bottom: 15px;">
+              <strong>Usabilidade (Fatores Humanos)</strong> É o conceito mais amplo. Refere-se ao estudo de como os seres humanos se relacionam com qualquer produto, seja uma torradeira, uma maçaneta ou um software.
+              </div>
+              
+              <div class="card-box" style="font-size: 0.8em; margin-bottom: 15px;">
+              <strong>IHC (Interação Humano-Computador)</strong> É um subconjunto da usabilidade que foca especificamente na relação entre humanos e produtos computacionais/sistemas.
+              </div>
+            </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
               ### UI (User Interface)
               Refere-se à **parte visível e tangível** do sistema (botões, menus, cores). Uma boa estética é importante, mas não garante sucesso.
               
@@ -91,22 +83,22 @@
               
               > "A UX é maior do que a soma de suas partes."
             </textarea>
-          </section>
-          
-          <section data-markdown>
-            <textarea data-template>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
               ### O Exemplo da Bicicleta 🚲
               
               Lowdermilk ilustra com uma bicicleta que tem um design visual arrojado (**boa UI**), mas rodas quadradas (**má UX/Usabilidade**), tornando-a inútil.
               
               Um aplicativo pode ser esteticamente perfeito, mas se o fluxo de navegação for confuso, a UX será terrível.
             </textarea>
-          </section>
         </section>
+      </section>
 
-        <section>
-          <section data-markdown>
-            <textarea data-template>
+      <section>
+        <section data-markdown>
+          <textarea data-template>
               ## Metas: Usabilidade vs. UX
               
               ### Metas de Usabilidade (Objetivas)
@@ -116,10 +108,10 @@
               * É fácil de aprender (learnability)?
               * É eficiente (permite alta produtividade)?
             </textarea>
-          </section>
+        </section>
 
-          <section data-markdown>
-            <textarea data-template>
+        <section data-markdown>
+          <textarea data-template>
               ### Metas de UX (Subjetivas)
               Focam em como o usuário se **sente**:
               * É satisfatório?
@@ -128,11 +120,11 @@
               * É esteticamente agradável?
               * É emocionalmente adequado?
             </textarea>
-          </section>
         </section>
+      </section>
 
-        <section data-markdown>
-          <textarea data-template>
+      <section data-markdown>
+        <textarea data-template>
             ## O Mito da Subjetividade
             
             **DCU não é apenas "arte".**
@@ -143,31 +135,11 @@
             Note:
             Decisões de design devem ser baseadas em dados.
           </textarea>
-        </section>
-        
+      </section>
+
+      <section>
         <section data-markdown>
-            <textarea data-template>
-            ### Resumo do Tópico 1
-            
-            *   **UI** é o que o usuário **vê** (a "pele" do software).
-            *   **UX** é o que o usuário **sente e vivencia**.
-            
-            O papel do desenvolvedor é garantir que as telas permitam atingir tanto as metas de eficiência (**Usabilidade**) quanto as de satisfação (**UX**).
-            </textarea>
-        </section>
-
-        <section>
-          <section data-markdown>
-            <textarea data-template>
-              ## Tópico 2: Design de Interação e Affordance
-              
-              **Objetivo da Aula:**
-              Compreender o Design de Interação como uma área multidisciplinar e dominar o conceito de **Affordance** para criar interfaces intuitivas.
-            </textarea>
-          </section>
-
-          <section data-markdown>
-            <textarea data-template>
+          <textarea data-template>
               ### O que é Design de Interação?
               
               Segundo Rogers:
@@ -181,10 +153,10 @@
               Note:
               Terry Winograd analogia.
             </textarea>
-          </section>
-          
-          <section data-markdown>
-             <textarea data-template>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
               ### Multidisciplinaridade
               
               Exige colaboração de:
@@ -196,25 +168,23 @@
               
               *Ponto de atenção:* Diferentes vocabulários técnicos podem causar falhas de comunicação.
              </textarea>
-          </section>
         </section>
+      </section>
 
-        <section>
-          <section data-markdown>
-            <textarea data-template>
+      <section>
+        <section data-markdown>
+          <textarea data-template>
               ## O Conceito de Affordance
-              
-              Termo popularizado por **Don Norman**.
-              
               Refere-se aos atributos de um objeto que permitem às pessoas saber como utilizá-lo. É dar uma **"pista" visual**.
-              
+              <img src="./assets/affordance.png" width="400" style="display: block; margin: 0 auto;">
+              <small style="display: block; color: gray;">Fonte: Perceived Affordance: Understanding the Essence of Design and User Perception (Acessado em 22/02/2026)</small>
               *   **Maçaneta:** Affordance de girar ou puxar.
               *   **Botão do mouse:** Affordance de ser pressionado.
             </textarea>
-          </section>
+        </section>
 
-          <section data-markdown>
-            <textarea data-template>
+        <section data-markdown>
+          <textarea data-template>
               ### Affordance em Interfaces
               **(Virtual vs. Real)**
               
@@ -226,35 +196,37 @@
               Note:
               Exemplo de erro: botões flat sem relevo (pouca affordance percebida).
             </textarea>
-          </section>
-          
-          <section data-markdown>
-             <textarea data-template>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+              ### Affordance em Interfaces
+              <img src="./assets/affordance-ui.avif" width="600" style="display: block; margin: 0 auto;">
+              <small style="display: block; color: gray;">Fonte: What is Affordance in UX Design? (Acessado em 22/02/2026)</small>
+            </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
              ### Affordance Falsa
              
              O perigo de projetar objetos que parecem fazer algo que não fazem.
-             
-             *Exemplo:* Um texto sublinhado que parece um link, mas não é.
+             <img src="./assets/false-affordance.avif" width="600" style="display: block; margin: 0 auto;">
+             <small style="display: block; color: gray;">Fonte: What are affordances in UX design? (Acessado em 22/02/2026)</small>
              </textarea>
-          </section>
         </section>
+      </section>
 
-        <section data-markdown>
-          <textarea data-template>
-            ## Princípios Complementares
-            
-            ### Restrições (Constraints)
-            Limitam as ações para prevenir erros.
-            *   **Físico:** Tomada de três pinos (impossível inserir incorretamente).
-            *   **Software:** "Menu sombreado" (mostra que existe, mas impede seleção incorreta).
-            
+      <section data-markdown>
+        <textarea data-template>
             ### Visibilidade e Feedback
-            O sistema deve sempre informar o que está acontecendo (som de clique, animação de carregando).
+            <img src="./assets/affordance-signifier.avif" width="600" style="display: block; margin: 0 auto;">
+            <small style="display: block; color: gray;">Fonte: What are affordances in UX design? (Acessado em 22/02/2026)</small>  
           </textarea>
-        </section>
+      </section>
 
-        <section data-markdown>
-          <textarea data-template>
+      <section data-markdown>
+        <textarea data-template>
             ## Atividade Prática (TDE) 🕵️‍♀️
             
             Encontrem, até a próxima aula:
@@ -262,35 +234,59 @@
             1.  Um exemplo de **má affordance em um objeto físico** do dia a dia (ex: porta com puxador que precisa empurrar).
             2.  Um exemplo em uma **interface digital** (ex: um botão que não parece botão).
           </textarea>
-        </section>
+      </section>
 
-      </div>
+      <section data-markdown>
+        <textarea data-template>
+          ## Referências
+          
+          <div style="font-size: 0.5em; text-align: left;">
+            
+            ### Imagens e Mídias
+            * **[1] Affordance:** Disponível em: [Perceived Affordance: Understanding the Essence of Design and User Perception](https://unmatchedstyle.com/news/perceived-affordance-understanding-the-essence-of-design-and-user-perception.php). Acesso em: 22 Fev. 2026.
+            * **[2] Exemplo Affordance digital:** Disponível em: [What is Affordance in UX Design?](https://www.ramotion.com/blog/affordance-in-ux-design/). Acesso em: 22 Fev. 2026.
+            * **[3] Exemplo Affordance falsa:** Disponível em: [What are affordances in UX design?](https://blog.logrocket.com/ux-design/affordances-ux-design/). Acesso em: 22 Fev. 2026. 
+            * **[4] Exemplo Affordance feedback:** Disponível em: [What are affordances in UX design?](https://blog.logrocket.com/ux-design/affordances-ux-design/). Acesso em: 22 Fev. 2026. 
+
+            ### Bibliografia Consultada
+            * **LOWDERMILK, Travis.** *Design centrado no usuário: um guia para o desenvolvimento de aplicativos amigáveis.* São Paulo: Novatec Editora Ltda, 2013. 182 p.
+                  
+            * **ROGERS, Yvonne.** *Design de interação: além da interação humano-computador.* 3. ed. Porto Alegre: Bookman, 2013. 585 p.
+                  
+            * **SOMMERVILLE, Ian.** *Engenharia de software.* 10. ed. São Paulo: Pearson Education do Brasil, 2018. 756 p.
+                  
+          </div>
+          <small>Apresentado por: Guilherme de Araujo Gabriel</small>
+        </textarea>
+      </section>
     </div>
+  </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/notes/notes.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/markdown/markdown.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/highlight/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/math/math.min.js"></script>
-    <script src="../assets/js/custom-slides.js"></script>
-    <script>
-      Reveal.initialize({
-        hash: true,
-        slideNumber: true,
-        plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.MathJax3],
-        mathjax3: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
-          tex: {
-            inlineMath: [
-              ['$', '$'],
-              ['\\(', '\\)'],
-            ],
-          },
-          options: {
-            skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-          },
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/reveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/notes/notes.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/markdown/markdown.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/highlight/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.0.4/plugin/math/math.min.js"></script>
+  <script src="../assets/js/custom-slides.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: true,
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.MathJax3],
+      mathjax3: {
+        mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js',
+        tex: {
+          inlineMath: [
+            ['$', '$'],
+            ['\\(', '\\)'],
+          ],
         },
-      });
-    </script>
-  </body>
+        options: {
+          skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+        },
+      },
+    });
+  </script>
+</body>
+
 </html>
