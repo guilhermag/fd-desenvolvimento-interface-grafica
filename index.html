@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Guilherme de Araujo Gabriel" />
@@ -9,42 +10,36 @@
     <link rel="stylesheet" href="assets/css/custom-slides.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.3/dist/cdn.min.js"></script>
 
-  </head>
-  <body class="body-menu" x-data="{ currentTab: 'ads' }">
+</head>
+
+<body class="body-menu" x-data="{ currentTab: 'ads' }">
     <h1 class="header-menu">📚 Central de Aulas</h1>
 
     <div class="dashboard-grid">
-        
+
         <!-- Coluna Esquerda: Abas e Mural de Avisos -->
         <aside class="left-column">
             <div class="tabs-container">
-                <button 
-                    class="tab-button" 
-                    :class="{ 'active': currentTab === 'ads' }" 
-                    @click="currentTab = 'ads'">
+                <button class="tab-button" :class="{ 'active': currentTab === 'ads' }" @click="currentTab = 'ads'">
                     ADS
                 </button>
-                <button 
-                    class="tab-button" 
-                    :class="{ 'active': currentTab === 'es' }" 
-                    @click="currentTab = 'es'">
+                <button class="tab-button" :class="{ 'active': currentTab === 'es' }" @click="currentTab = 'es'">
                     Eng. Software
                 </button>
             </div>
 
             <div class="tab-content-wrapper">
                 <!-- Mural de Avisos: ADS -->
-                <div class="tab-pane" 
-                     x-show="currentTab === 'ads'"
-                     > 
-                    
+                <div class="tab-pane" x-show="currentTab === 'ads'">
+
                     <div class="notice-board">
                         <h3>📢 Mural de Avisos (ADS)</h3>
                         <div class="notice-card urgent">
                             <span class="notice-date">23/02/2026</span>
-                            <p><strong>Atividade 1:</strong> Devido a problemas da plataforma, a entrega da atividade 1 foi prorrogada para o dia 26/02/2026 as 23:59.</p>
+                            <p><strong>Atividade 1:</strong> Devido a problemas da plataforma, a entrega da atividade 1
+                                foi prorrogada para o dia 26/02/2026 as 23:59.</p>
                         </div>
-                       <!--  <div class="notice-card">
+                        <!--  <div class="notice-card">
                             <span class="notice-date">15/02/2026</span>
                             <p>Não haverá aula no dia 20/02 devido ao feriado.</p>
                         </div> -->
@@ -53,7 +48,7 @@
                         <div class="important-dates">
                             <h4>📅 Datas Importantes</h4>
                             <ul>
-<li>
+                                <li>
                                     <strong>09/04:</strong> Avaliação Descritiva (Prova Dissertativa)
                                 </li>
                                 <li>
@@ -69,30 +64,28 @@
                         </div>
                     </div>
                 </div>
-        
+
                 <!-- Mural de Avisos: Engenharia de Software -->
-                <div class="tab-pane" 
-                     x-show="currentTab === 'es'" 
-                     style="display: none;">
-                    
+                <div class="tab-pane" x-show="currentTab === 'es'" style="display: none;">
+
                     <div class="notice-board">
                         <h3>📢 Mural de Avisos (ES)</h3>
-                         <div class="notice-card">
+                        <div class="notice-card">
                             <span class="notice-date">24/02/2026</span>
                             <p>Dias de aulas</p>
                             <ul class="date-list-columns">
-                              <li>24/02/2026</li>
-                              <li>03/03/2026</li>
-                              <li>24/03/2026</li>
-                              <li>07/04/2026</li>
-                              <li>28/04/2026</li>
-                              <li>12/05/2026</li>
-                              <li>26/05/2026</li>
-                              <li>09/06/2026</li>
-                              <li>16/06/2026</li>
+                                <li>24/02/2026</li>
+                                <li>03/03/2026</li>
+                                <li>24/03/2026</li>
+                                <li>07/04/2026</li>
+                                <li>28/04/2026</li>
+                                <li>12/05/2026</li>
+                                <li>26/05/2026</li>
+                                <li>09/06/2026</li>
+                                <li>16/06/2026</li>
                             </ul>
                         </div>
-    
+
                         <div class="important-dates">
                             <h4>📅 Datas Importantes</h4>
                             <ul>
@@ -120,11 +113,18 @@
             <ul class="aula-list">
                 <li class="aula-item">
                     <a href="aula-01/">Aula 01: Introdução e Conceitos Fundamentais</a>
-                    <a href="aula-01/?print-pdf" class="print-button" target="_blank" title="Imprimir Slide"><span>📄</span> PDF</a>
+                    <a href="aula-01/?print-pdf" class="print-button" target="_blank"
+                        title="Imprimir Slide"><span>📄</span> PDF</a>
                 </li>
                 <li class="aula-item">
                     <a href="aula-02/">Aula 02: Diferenciações e Princípios de Design</a>
-                    <a href="aula-02/?print-pdf" class="print-button" target="_blank" title="Imprimir Slide"><span>📄</span> PDF</a>
+                    <a href="aula-02/?print-pdf" class="print-button" target="_blank"
+                        title="Imprimir Slide"><span>📄</span> PDF</a>
+                </li>
+                <li class="aula-item">
+                    <a href="aula-03/">Aula 03: Usabilidade e Heurísticas (Metas, Aspectos, Nielsen e Shneiderman)</a>
+                    <a href="aula-03/?print-pdf" class="print-button" target="_blank"
+                        title="Imprimir Slide"><span>📄</span> PDF</a>
                 </li>
             </ul>
         </section>
@@ -132,8 +132,10 @@
     </div>
 
     <footer class="main-footer">
-        <p>&copy; 2026 Central de Aulas. Desenvolvido por <a href="https://github.com/guilhermag" target="_blank">Guilherme de Araujo Gabriel</a>.</p>
+        <p>&copy; 2026 Central de Aulas. Desenvolvido por <a href="https://github.com/guilhermag"
+                target="_blank">Guilherme de Araujo Gabriel</a>.</p>
         <p>Todos os direitos reservados.</p>
     </footer>
-  </body>
+</body>
+
 </html>
