@@ -20,12 +20,16 @@
   <a href="../" class="back-link">← Voltar para Aulas</a>
   <div class="reveal">
     <div class="slides">
+
+      <!-- Bloco 1: Abertura e Fundamentos -->
       <section>
         <section data-markdown>
           <textarea data-template>
               ### Faculdade Donaduzzi
               # Desenvolvimento de Interface Gráfica
-              **Aula 05: Projeto: Imersão (Análise de negócio, Definição de problema, Jornada do usuário)**
+              **Aula 05: Projeto - Imersão**
+              
+              Análise de Negócio, Definição do Problema e Jornada do Usuário
               
               ---
               **Prof. Guilherme de Araujo Gabriel**
@@ -33,8 +37,233 @@
             </textarea>
         </section>
 
+        <section data-markdown>
+          <textarea data-template>
+              ## Engenharia vs. Arquitetura
+              
+              *   O desenvolvimento de software tradicional é como a Engenharia Civil: foca em custo, estrutura e viabilidade.
+              *   O Design de Interação é como a Arquitetura: preocupa-se com o interior da casa e como as pessoas viverão naquele espaço.
+              
+              <br>
+
+              > **"Vocês estão construindo o código para a máquina ou projetando o espaço para o usuário?"**
+            </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+              ## As 3 Características-chave do Design
+              
+              *   Foco no usuário (envolvimento desde o princípio).
+              *   Critérios de usabilidade específicos e documentados.
+              *   A iteração (repetição) é inevitável.
+            </textarea>
+        </section>
       </section>
 
+      <!-- Bloco 2: O Processo de Design e a Metáfora -->
+      <section>
+        <section data-markdown>
+          <textarea data-template>
+              ## As 4 Atividades Básicas
+              
+              *   Identificar necessidades e estabelecer requisitos (Nosso foco de hoje!).
+              *   Desenvolver designs alternativos.
+              *   Construir versões interativas (Protótipos).
+              *   Avaliar os designs.
+            </textarea>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+              ## A Metáfora da Pintura
+              
+              *   Desenvolver sem planejar é como começar a espalhar tinta na parede cegamente.
+              *   Primeiro você mede a sala, escolhe a cor e isola as bordas com fita.
+              *   Pular o planejamento resulta em desperdício de tempo e dinheiro.
+              
+              <img src="./assets/painting-metaphor.jpg" width="400" style="display: block; margin: 0 auto; alt: Ilustração de uma sala bagunçada de tinta vs uma sala preparada para pintura">
+              <small style="display: block; color: gray;">Ilustração de uma sala bagunçada de tinta vs. uma sala preparada para pintura.</small>
+            </textarea>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+              ## A Sala Que Muda de Forma
+              
+              *   Apesar do plano, o desenvolvimento é dinâmico. É como "pintar uma sala que muda de formato todos os dias".
+              *   Mesmo levantando requisitos, há sempre o desconhecido à espera.
+              *   Não tenha medo de abandonar um caminho se ele não atender mais ao usuário.
+            </textarea>
+        </section>
+      </section>
+
+      <!-- Bloco 3: O Negócio e o Problema -->
+      <section>
+        <section data-markdown>
+          <textarea data-template>
+              ## A Missão da Equipe
+              
+              *   Antes do código, defina o propósito global do projeto.
+              *   A missão lembra a equipe do porquê estamos trabalhando nisso.
+              *   *Exemplo:* "Desenvolver soluções simples e inovadoras para que os usuários alcancem padrões mais elevados."
+            </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+              ## O Poder de um Título
+              
+              *   Como você nomeia seu projeto dita todo o escopo dele.
+              *   *Antes:* "Banco de Dados da Equipe de Respostas Rápidas".
+              *   *Depois (Visão de Negócio):* "Sistema de Respostas Rápidas" (inclui todo o hospital, maior impacto).
+              
+              <br>
+
+              > **"O nome do seu projeto está limitando o que ele poderia ser?"**
+            </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+              ## Avaliação de Impacto
+              
+              *   Quem ou o que será afetado como resultado do aplicativo?
+              *   Quais processos de negócio serão alterados quando ele for lançado?
+            </textarea>
+        </section>
+      </section>
+
+      <!-- Bloco 4: Mapeando os Stakeholders -->
+      <section>
+        <section data-markdown>
+          <textarea data-template>
+              ## Quem são os Usuários (Stakeholders)?
+              
+              *   Stakeholders são todos aqueles afetados direta ou indiretamente pelo sistema.
+              *   **Primários:** Usam o sistema frequentemente e diretamente.
+              *   **Secundários:** Usam ocasionalmente ou via intermediários.
+              *   **Terciários:** Afetados pelo sistema, mas não "clicam" nele.
+            </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+              ## Exemplo Prático: Supermercado
+              
+              *   **Primários:** Operadores de caixa que ficam na frente das telas.
+              *   **Secundários:** Gerentes de estoque e repositores.
+              *   **Terciários:** O cliente na fila, esperando o sistema ser rápido!
+              
+              <img src="./assets/supermarket-stakeholders.jpg" width="400" style="display: block; margin: 0 auto; alt: Ilustração de um caixa de supermercado apontando para os 3 tipos de pessoas">
+              <small style="display: block; color: gray;">Ilustração de um caixa de supermercado apontando para os 3 tipos de pessoas.</small>
+            </textarea>
+        </section>
+      </section>
+
+      <!-- Bloco 5: A Jornada e os Fluxos -->
+      <section>
+        <section data-markdown>
+          <textarea data-template>
+              ## O Que São Necessidades?
+              
+              *   Muitas vezes, as pessoas não sabem o que querem até que você lhes mostre.
+              *   Elas não têm ideia do que a tecnologia é capaz de fazer.
+              *   Nosso papel é extrair a dor do fluxo atual antes de oferecer a solução.
+            </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+              ## Modelos de Fluxo de Trabalho
+              
+              *   Visualizar os passos necessários para que o usuário complete uma ação evita gargalos lógicos.
+              *   Use diagramas para mapear a jornada no mundo real antes de levá-la para a tela.
+              
+              <img src="./assets/vending-machine-flowchart.png" width="400" style="display: block; margin: 0 auto; alt: Diagrama visual de fluxo de uma máquina de vendas">
+              <small style="display: block; color: gray;">Diagrama visual de fluxo de uma máquina de vendas (Inserir Moeda -> Válida? -> Mostrar Valor -> Entregar Item).</small>
+            </textarea>
+        </section>
+      </section>
+
+      <!-- Bloco 6: Requisitos - O Ponto Crítico -->
+      <section>
+        <section data-markdown>
+          <textarea data-template>
+              ## Requisitos de Usuário
+              **(A Dor)**
+              
+              *   Refere-se ao que a pessoa necessita. **ZERO TECNOLOGIA.**
+              *   *Exemplo:* "Saber se alguém trocou de salgado para sobremesa para evitar que falte comida na festa."
+            </textarea>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+              ## Requisitos Funcionais
+              **(A Solução)**
+              
+              *   Refere-se ao que o aplicativo necessita fazer (especificações técnicas).
+              *   *Exemplo:* "O aplicativo enviará uma Notificação Push para avisar a alteração do prato."
+              
+              <img src="./assets/smartphone-push-notification.jpg" width="300" style="display: block; margin: 0 auto; alt: Tela de smartphone exibindo uma notificação push do aplicativo de festas">
+              <small style="display: block; color: gray;">Tela de smartphone exibindo uma notificação push do aplicativo de festas.</small>
+            </textarea>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+              ## A Regra de Ouro do Escopo
+              
+              *   Todo Requisito Funcional deve estar ligado a um Requisito de Usuário.
+              *   Se você criar um recurso apenas porque "tem o código para isso" e não para resolver uma dor documentada, isso é feature creep inútil.
+            </textarea>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+              ## O Poder de Documentar
+              
+              *   Mostrar as solicitações por escrito aos usuários é uma ferramenta poderosa.
+              *   Isso frequentemente os faz perceber: "Na verdade, eu preciso de algo diferente..."
+            </textarea>
+        </section>
+      </section>
+
+      <!-- Bloco 7: Protótipos e A "Grande Revelação" -->
+      <section>
+        <section data-markdown>
+          <textarea data-template>
+              ## A Fantasia do Batman
+              **(A Grande Revelação)**
+              
+              *   A fantasia de um desenvolvedor é sumir meses na "Batcaverna" e chocar o mundo com seu código genial.
+              *   A realidade: Se os usuários não forem envolvidos cedo, ficarão desapontados quando você terminar.
+              
+              <br>
+            </textarea>
+        </section>
+        <section data-markdown>
+          <textarea data-template>
+              ## O Valor do Protótipo
+              
+              *   Em vez de grandes revelações, use protótipos para dar visualização precoce às ideias.
+              *   Ajuda a matar ambiguidades sem gastar horas escrevendo código de verdade.
+            </textarea>
+        </section>
+      </section>
+
+      <!-- Bloco 8: Fechamento e Prática TDE -->
+      <section>
+        <section data-markdown>
+          <textarea data-template>
+              ## TDE - O Documento de Visão
+              **(Imersão)**
+              
+              *   **Missão:** Escolher o problema real do projeto semestral.
+              *   **Passo 1:** Definir Nome, Descrição e Missão da Equipe.
+              *   **Passo 2:** Avaliação de Impacto e Identificação de Stakeholders.
+              *   **Passo 3:** Mapear a Jornada Atual do Usuário.
+              *   **Passo 4:** Criar tabela listando 3 Requisitos de Usuário amarrados a 3 Requisitos Funcionais.
+            </textarea>
+        </section>
+      </section>
 
     </div>
   </div>
